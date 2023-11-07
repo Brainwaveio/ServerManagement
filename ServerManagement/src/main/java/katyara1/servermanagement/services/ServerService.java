@@ -8,7 +8,7 @@ public class ServerService {
     private final Server _server;
 
     public ServerService() {
-        _server = ServerManagement.getInstance().getServer();
+        _server = ServerManagement.server;
     }
 
     public ServerInfoDto getInfoServer() {

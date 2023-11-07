@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "uuid": "c858ba5f-dfe6-4861-befb-a978320b8a75",
+    "name": "asdfasdfsasdf",
+    "created": "2023-11-07 11:10:29 -0800",
+    "source": "Server",
+    "expires": "forever",
+    "reason": "Banned by an operator."
+  },
+  {
+    "uuid": "45ddac5f-74c3-395e-86cb-bd542cf593c5",
+    "name": "asdfasdfsasdfasdfasdf",
+    "created": "2023-11-07 11:10:30 -0800",
+    "source": "Server",
+    "expires": "forever",
+    "reason": "Banned by an operator."
+  },
+  {
+    "uuid": "0fd3f2c0-b8f1-4632-8d88-8a4033d50587",
+    "name": "asdas",
+    "created": "2023-11-07 11:10:24 -0800",
+    "source": "Server",
+    "expires": "forever",
+    "reason": "Banned by an operator."
+  }
+]

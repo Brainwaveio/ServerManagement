@@ -9,7 +9,7 @@ public abstract class AbstractCommand implements CommandExecutor, TabCompleter {
     protected ServerManagement _serverManagementInstance;
 
     protected AbstractCommand(String commandName) {
-        _serverManagementInstance = ServerManagement.getInstance();
+        _serverManagementInstance = ServerManagement.instance;
 
         PluginCommand pluginCommand = _serverManagementInstance.getCommand(commandName);
 
