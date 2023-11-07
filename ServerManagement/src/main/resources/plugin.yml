@@ -1,0 +1,4 @@
+name: ServerManagement
+version: '${project.version}'
+main: katyara1.servermanagement.ServerManagement
+api-version: '1.20'
