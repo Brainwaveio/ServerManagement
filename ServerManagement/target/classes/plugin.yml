@@ -1,5 +1,5 @@
 name: ServerManagement
-version: '${project.version}'
+version: '1.0.0'
 main: katyara1.servermanagement.ServerManagement
 api-version: '1.20'
 commands:
