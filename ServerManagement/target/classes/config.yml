@@ -1,2 +1,5 @@
 apiserver:
   port: 80
+  username: admin
+  password: admin
+  token: {}

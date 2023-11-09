@@ -8,7 +8,7 @@ public class ServerService {
     private final Server _server;
 
     public ServerService() {
-        _server = ServerManagement.server;
+        _server = ServerManagement.getServerPlugin();
     }
 
     public ServerInfoDto getInfoServer() {

@@ -3,10 +3,12 @@ package katyara1.servermanagement.API.controllers;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import katyara1.servermanagement.API.DTOs.BanDto;
+import katyara1.servermanagement.API.DTOs.ErrorDto;
 import katyara1.servermanagement.API.utils.HttpHelper;
 import katyara1.servermanagement.ServerManagement;
 import java.util.Map;
 import java.io.IOException;
+import java.util.Objects;
 
 public class BanIpController extends HttpHelper implements HttpHandler {
     @Override
@@ -15,12 +17,19 @@ public class BanIpController extends HttpHelper implements HttpHandler {
         BanDto dto = new BanDto(true);
         String ip = params.get("ip");
 
-        for (String ipBan:
-        if (!ip.equals("127.0.0.1") && !ip.equals("localhost") && !ip.equals(ServerManagement.server.getIp())) {
-            ServerManagement.server.banIP(ip);
+        String token = params.get("token");
+
+        if (!Objects.equals(token, ServerManagement.getConfigPlugin().getString("apiserver.token"))) {
+            ErrorDto errorDto = new ErrorDto("token is invalid");
+
+            write(exchange, _gson.toJson(errorDto));
         }
 
-        for (String ipBan : ServerManagement.server.getIPBans()) {
+        if (!ip.equals("127.0.0.1") && !ip.equals("localhost") && !ip.equals(ServerManagement.getServerPlugin().getIp())) {
+            ServerManagement.getServerPlugin().banIP(ip);
+        }
+
+        for (String ipBan : ServerManagement.getServerPlugin().getIPBans()) {
             if (!ipBan.equals(params.get("ip"))) {
                 dto = new BanDto(false);
                 return;
