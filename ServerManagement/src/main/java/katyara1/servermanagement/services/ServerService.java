@@ -21,6 +21,7 @@ public class ServerService {
         return new ServerInfoDto(
                 _server.getName(),
                 _server.getVersion(),
+                _server.getBukkitVersion(),
                 ip,
                 _server.getPort(),
                 _server.getMaxPlayers(),
