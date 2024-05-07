@@ -19,16 +19,16 @@ public class ServerService {
         }
 
         return new ServerInfoDto(
-                _server.getName(),
-                _server.getVersion(),
-                _server.getBukkitVersion(),
-                ip,
-                _server.getPort(),
-                _server.getMaxPlayers(),
-                _server.getIPBans(),
-                _server.getAllowEnd(),
-                _server.getAllowNether(),
-                _server.getAllowFlight()
-            );
+            _server.getName(),
+            _server.getVersion(),
+            _server.getBukkitVersion(),
+            ip,
+            _server.getPort(),
+            _server.getMaxPlayers(),
+            _server.getIPBans(),
+            _server.getAllowEnd(),
+            _server.getAllowNether(),
+            _server.getAllowFlight()
+        );
     }
 }
