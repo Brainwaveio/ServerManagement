@@ -1,21 +1,21 @@
 [
   {
     "ip": "12712341234",
-    "created": "2023-11-07 12:10:30 -0800",
+    "created": "2023-11-07 22:10:30 +0200",
     "source": "(Unknown)",
     "expires": "forever",
     "reason": "Banned by an operator."
   },
   {
     "ip": "12712341234133",
-    "created": "2023-11-07 12:11:39 -0800",
+    "created": "2023-11-07 22:11:39 +0200",
     "source": "(Unknown)",
     "expires": "forever",
     "reason": "Banned by an operator."
   },
   {
     "ip": "127123412341",
-    "created": "2023-11-07 12:11:34 -0800",
+    "created": "2023-11-07 22:11:34 +0200",
     "source": "(Unknown)",
     "expires": "forever",
     "reason": "Banned by an operator."
